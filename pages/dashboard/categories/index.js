@@ -62,8 +62,8 @@ const CategoryTable = () => {
       });
   };
 
-  const changeTopCategory = async (id) => {
-    await updateData("/api/categories/edit", { id })
+  const changeTopCategory = async (id, target) => {
+    await updateData("/api/categories/edit", { id, target })
       .then((data) =>
         data.success
           ? toast.success("Category Updated Successfully")
@@ -135,6 +135,24 @@ const CategoryTable = () => {
       ),
     },
     {
+      name: t("Show_In Nav"),
+      selector: (row) =>
+        permissions.edit ? (
+          <div className="form-check form-switch">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              onChange={() => changeTopCategory(row._id, "nav")}
+              defaultChecked={row.navCategory}
+            />
+          </div>
+        ) : row.navCategory ? (
+          <Check2Circle width={20} height={20} />
+        ) : (
+          <SlashCircle width={20} height={20} />
+        ),
+    },
+    {
       name: t("Top Category"),
       selector: (row) =>
         permissions.edit ? (
@@ -142,7 +160,7 @@ const CategoryTable = () => {
             <input
               className="form-check-input"
               type="checkbox"
-              onChange={() => changeTopCategory(row._id)}
+              onChange={() => changeTopCategory(row._id, "top")}
               defaultChecked={row.topCategory}
             />
           </div>

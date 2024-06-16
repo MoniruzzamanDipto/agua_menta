@@ -39,9 +39,13 @@ export default async function apiHandler(req, res) {
 
     case "PUT":
       try {
-        const { id } = req.body;
+        const { id, target } = req.body;
         const category = await categoryModel.findById(id);
-        category.topCategory = !category.topCategory;
+        if (target === "top") {
+          category.topCategory = !category.topCategory;
+        } else if (target === "nav") {
+          category.navCategory = !category.navCategory;
+        }
         await category.save();
         res.status(200).json({ success: true });
       } catch (err) {

@@ -105,6 +105,7 @@ export const category = {
     },
   ],
   topCategory: { type: Boolean, default: false },
+  navCategory: { type: Boolean, default: false },
 };
 
 export const brand = {
