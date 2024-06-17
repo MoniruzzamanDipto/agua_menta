@@ -12,7 +12,16 @@ export default async function apiHandler(req, res) {
       try {
         let category = [];
         res.setHeader("Cache-Control", "s-maxage=300, stale-while-revalidate");
-        if (req.query.only_category === "true") {
+        if (req.query.only_nav === "true") {
+          category = await CategoryModel.find({ navCategory: true })
+            .select({
+              _id: 0,
+              name: 1,
+              slug: 1,
+            })
+            .limit(30);
+          return res.status(200).json({ success: true, category });
+        } else if (req.query.only_category === "true") {
           category = await CategoryModel.find({})
             .select({
               _id: 0,

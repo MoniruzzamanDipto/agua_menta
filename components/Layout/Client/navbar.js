@@ -16,6 +16,8 @@ import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import c from "./navbar.module.css";
 import { useTranslation } from "react-i18next";
+import { fetchData } from "~/lib/clientFunctions";
+import SwipeableNav from "./categoryNav";
 
 const CartView = dynamic(() => import("./cartView"), { ssr: false });
 const CategoryMenu = dynamic(() => import("./categoryMenu"), { ssr: false });
@@ -25,6 +27,7 @@ const LanguageSwitcher = dynamic(() => import("~/components/LanguageSwitcher"));
 
 const NavBar = () => {
   const [hideTopBar, setHideTopBar] = useState(false);
+  const [cat, setCat] = useState([]);
   // Selecting session from global state
   const { session } = useSelector((state) => state.localSession);
   // Selecting settings from global state
@@ -37,6 +40,15 @@ const NavBar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
+
+  async function GetData() {
+    const url = `/api/home/categories?only_nav=true`;
+    const data = await fetchData(url);
+    if (data.success) setCat(data.category || []);
+  }
+  useEffect(() => {
+    GetData();
   }, []);
 
   useEffect(() => {
@@ -88,6 +100,36 @@ const NavBar = () => {
       name: t("about"),
       to: "/about",
     },
+  ];
+
+  const items = [
+    "Home",
+    "About",
+    "Services",
+    "Contact",
+    "Blog",
+    "Careers",
+    "Portfolio",
+    "Testimonials",
+    "Pricing",
+    "FAQ",
+    "Support",
+    "Terms",
+    "Privacy",
+    "Portfolio",
+    "Testimonials",
+    "Pricing",
+    "FAQ",
+    "Support",
+    "Terms",
+    "Privacy",
+    "Portfolio",
+    "Testimonials",
+    "Pricing",
+    "FAQ",
+    "Support",
+    "Terms",
+    "Privacy",
   ];
 
   return (
@@ -190,7 +232,7 @@ const NavBar = () => {
         <div className={c.bottom_bar}>
           <CategoryMenu />
           <div className={c.nav_link}>
-            <ul className={c.ul}>
+            {/* <ul className={c.ul}>
               {navItem.map((item, index) => (
                 <li className={c.list} key={index}>
                   <div className={c.item}>
@@ -205,7 +247,8 @@ const NavBar = () => {
                   </div>
                 </li>
               )}
-            </ul>
+            </ul> */}
+            <SwipeableNav items={cat} />
           </div>
           <div className={c.track}>
             <Link href="/order-track">

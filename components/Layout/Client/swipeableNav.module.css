@@ -1,0 +1,60 @@
+.swipeable_nav_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.swipeable_nav {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  width: calc(100% - 40px);
+  position: relative;
+}
+
+.swipeable_nav::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 70px;
+  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  right: 0;
+}
+
+.swp {
+  transition: all 0.4s;
+}
+
+.nav_item {
+  flex: 0 0 auto;
+  padding: 10px;
+  margin: 0 5px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.control {
+  width: 40px;
+  display: flex;
+}
+
+.swipeable_nav_container button {
+  background-color: #fff;
+  color: black;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 18px;
+  margin: 0px 3px;
+}
+
+.swipeable_nav_container button:disabled {
+  cursor: not-allowed;
+  color: #ccc !important;
+}
