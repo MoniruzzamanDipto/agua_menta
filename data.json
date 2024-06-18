@@ -2298,5 +2298,1541 @@
       "c": "ZWL",
       "s": "ZWL$"
     }
+  ],
+  "productGuide": [
+    {
+      "for": "WOMEN",
+      "data": [
+        {
+          "category": "SWIMWEAR",
+          "table": [
+            {
+              "title": "BIKINI TOP",
+              "header": ["SIZE", "BRA (IN)", "UNDER-BRA (IN)"],
+              "details": {
+                "image": "/images/SizeGuide_Women_BikiniTop_clz.svg",
+                "qna": [
+                  {
+                    "q": "Bra",
+                    "a": "Measure the circumference of the breast at the height of the nipples, while standing straight."
+                  },
+                  {
+                    "q": "Under-bra",
+                    "a": "Measure the circumference directly underneath the breasts."
+                  }
+                ]
+              },
+              "data": [
+                {
+                  "size": "XS / 32",
+                  "bra": {
+                    "min": 30,
+                    "max": 33
+                  },
+                  "underBra": {
+                    "min": 26,
+                    "max": 30
+                  }
+                },
+                {
+                  "size": "S / 34",
+                  "bra": {
+                    "min": 33,
+                    "max": 35
+                  },
+                  "underBra": {
+                    "min": 26,
+                    "max": 32
+                  }
+                },
+                {
+                  "size": "M / 36",
+                  "bra": {
+                    "min": 35,
+                    "max": 37
+                  },
+                  "underBra": {
+                    "min": 28,
+                    "max": 34
+                  }
+                },
+                {
+                  "size": "L / 38",
+                  "bra": {
+                    "min": 37,
+                    "max": 39
+                  },
+                  "underBra": {
+                    "min": 30,
+                    "max": 36
+                  }
+                },
+                {
+                  "size": "XL / 40",
+                  "bra": {
+                    "min": 39,
+                    "max": 41
+                  },
+                  "underBra": {
+                    "min": 32,
+                    "max": 38
+                  }
+                },
+                {
+                  "size": "XXL / 42",
+                  "bra": {
+                    "min": 41,
+                    "max": 43
+                  },
+                  "underBra": {
+                    "min": 34,
+                    "max": 38
+                  }
+                },
+                {
+                  "size": "XXXL / 44",
+                  "bra": {
+                    "min": 43,
+                    "max": 45
+                  },
+                  "underBra": {
+                    "min": 36,
+                    "max": 38
+                  }
+                }
+              ]
+            },
+            {
+              "title": "BIKINI BOTTOM",
+              "header": ["SIZE", "WAIST (IN)", "PELVIS (IN)"],
+              "details": {
+                "image": "/images/SizeGuide_Women_BikiniBottom_clz.svg",
+                "qna": [
+                  {
+                    "q": "Waist",
+                    "a": "Measure the waist by placing the tape measure around the navel."
+                  },
+                  {
+                    "q": "Hips",
+                    "a": "Measure the circumference of the hips by placing the tape measure around the widest point around the buttocks."
+                  }
+                ]
+              },
+              "data": [
+                {
+                  "size": "1/XS",
+                  "waist": {
+                    "min": 23,
+                    "max": 26
+                  },
+                  "pelvis": {
+                    "min": 35,
+                    "max": 37
+                  }
+                },
+                {
+                  "size": "2/S",
+                  "waist": {
+                    "min": 26,
+                    "max": 28
+                  },
+                  "pelvis": {
+                    "min": 37,
+                    "max": 39
+                  }
+                },
+                {
+                  "size": "3/M",
+                  "waist": {
+                    "min": 28,
+                    "max": 31
+                  },
+                  "pelvis": {
+                    "min": 39,
+                    "max": 41
+                  }
+                },
+                {
+                  "size": "4/L",
+                  "waist": {
+                    "min": 31,
+                    "max": 33
+                  },
+                  "pelvis": {
+                    "min": 41,
+                    "max": 43
+                  }
+                },
+                {
+                  "size": "5/XL",
+                  "waist": {
+                    "min": 33,
+                    "max": 35
+                  },
+                  "pelvis": {
+                    "min": 43,
+                    "max": 45
+                  }
+                },
+                {
+                  "size": "6/XXL",
+                  "waist": {
+                    "min": 35,
+                    "max": 38
+                  },
+                  "pelvis": {
+                    "min": 45,
+                    "max": 48
+                  }
+                },
+                {
+                  "size": "7/XXXL",
+                  "waist": {
+                    "min": 38,
+                    "max": 40
+                  },
+                  "pelvis": {
+                    "min": 48,
+                    "max": 50
+                  }
+                }
+              ]
+            },
+            {
+              "title": "ONE-PIECES",
+              "header": [
+                "SIZE",
+                "BRA (IN)",
+                "UNDER-BRA (IN)",
+                "WAIST (IN)",
+                "HIPS (IN)"
+              ],
+              "details": {
+                "image": "/images/Women_Swimwear_OnePiece_clz.svg",
+                "qna": [
+                  {
+                    "q": "Bra",
+                    "a": "Measure the circumference of the breast at the height of the nipples, while standing straight."
+                  },
+                  {
+                    "q": "Under-bra",
+                    "a": "Measure the circumference directly underneath the breasts."
+                  },
+                  {
+                    "q": "Waist",
+                    "a": "Measure the waist by placing the tape measure around the navel."
+                  },
+                  {
+                    "q": "Hips",
+                    "a": "Measure the circumference of the hips by placing the tape measure around the widest point around the buttocks."
+                  }
+                ]
+              },
+              "data": [
+                {
+                  "size": "1/XS",
+                  "bra": {
+                    "min": 37,
+                    "max": 33
+                  },
+                  "underBra": {
+                    "min": 26,
+                    "max": 30
+                  },
+                  "waist": {
+                    "min": 23,
+                    "max": 26
+                  },
+                  "hips": {
+                    "min": 35,
+                    "max": 37
+                  }
+                },
+                {
+                  "size": "2/S",
+                  "bra": {
+                    "min": 33,
+                    "max": 35
+                  },
+                  "underBra": {
+                    "min": 26,
+                    "max": 32
+                  },
+                  "waist": {
+                    "min": 26,
+                    "max": 28
+                  },
+                  "hips": {
+                    "min": 37,
+                    "max": 39
+                  }
+                },
+                {
+                  "size": "3/M",
+                  "bra": {
+                    "min": 35,
+                    "max": 37
+                  },
+                  "underBra": {
+                    "min": 28,
+                    "max": 34
+                  },
+                  "waist": {
+                    "min": 28,
+                    "max": 31
+                  },
+                  "hips": {
+                    "min": 39,
+                    "max": 41
+                  }
+                },
+                {
+                  "size": "4/L",
+                  "bra": {
+                    "min": 37,
+                    "max": 39
+                  },
+                  "underBra": {
+                    "min": 30,
+                    "max": 36
+                  },
+                  "waist": {
+                    "min": 31,
+                    "max": 33
+                  },
+                  "hips": {
+                    "min": 41,
+                    "max": 43
+                  }
+                },
+                {
+                  "size": "5/XL",
+                  "bra": {
+                    "min": 39,
+                    "max": 41
+                  },
+                  "underBra": {
+                    "min": 32,
+                    "max": 38
+                  },
+                  "waist": {
+                    "min": 33,
+                    "max": 35
+                  },
+                  "hips": {
+                    "min": 43,
+                    "max": 45
+                  }
+                },
+                {
+                  "size": "6/XXL",
+                  "bra": {
+                    "min": 41,
+                    "max": 43
+                  },
+                  "underBra": {
+                    "min": 34,
+                    "max": 38
+                  },
+                  "waist": {
+                    "min": 35,
+                    "max": 38
+                  },
+                  "hips": {
+                    "min": 45,
+                    "max": 47
+                  }
+                }
+              ]
+            },
+            {
+              "title": "BEACHWAER - DRESSES",
+              "header": ["SIZE", "BRA (IN)", "WAIST (IN)", "HIPS (IN)"],
+              "details": {
+                "image": "/images/Women_Swimwear_Dresses_clz.svg",
+                "qna": [
+                  {
+                    "q": "Bra",
+                    "a": "Measure the circumference of the breast at the height of the nipples, while standing straight."
+                  },
+                  {
+                    "q": "Waist",
+                    "a": "Measure the waist by placing the tape measure around the navel."
+                  },
+                  {
+                    "q": "Hips",
+                    "a": "Measure the circumference of the hips by placing the tape measure around the widest point around the buttocks."
+                  }
+                ]
+              },
+              "data": [
+                {
+                  "size": "XS",
+                  "bra": {
+                    "min": 30,
+                    "max": 32
+                  },
+                  "waist": {
+                    "min": 23,
+                    "max": 26
+                  },
+                  "hips": {
+                    "min": 35,
+                    "max": 37
+                  }
+                },
+                {
+                  "size": "S",
+                  "bra": {
+                    "min": 32,
+                    "max": 35
+                  },
+                  "waist": {
+                    "min": 26,
+                    "max": 28
+                  },
+                  "hips": {
+                    "min": 37,
+                    "max": 39
+                  }
+                },
+                {
+                  "size": "M",
+                  "bra": {
+                    "min": 35,
+                    "max": 37
+                  },
+                  "waist": {
+                    "min": 28,
+                    "max": 31
+                  },
+                  "hips": {
+                    "min": 39,
+                    "max": 41
+                  }
+                },
+                {
+                  "size": "L",
+                  "bra": {
+                    "min": 37,
+                    "max": 39
+                  },
+                  "waist": {
+                    "min": 31,
+                    "max": 33
+                  },
+                  "hips": {
+                    "min": 41,
+                    "max": 43
+                  }
+                },
+                {
+                  "size": "XL",
+                  "bra": {
+                    "min": 39,
+                    "max": 41
+                  },
+                  "waist": {
+                    "min": 33,
+                    "max": 36
+                  },
+                  "hips": {
+                    "min": 43,
+                    "max": 45
+                  }
+                }
+              ]
+            },
+            {
+              "title": "BEACHWEAR - TROUSERS ",
+              "header": ["SIZE", "WAIST (IN)", "HIPS (IN)"],
+              "details": {
+                "image": "/images/Women_Swimwear_Trousers_clz.svg",
+                "qna": [
+                  {
+                    "q": "Waist",
+                    "a": "Measure the waist by placing the tape measure around the navel."
+                  },
+                  {
+                    "q": "Hips",
+                    "a": "Measure the circumference of the hips by placing the tape measure around the widest point around the buttocks."
+                  }
+                ]
+              },
+              "data": [
+                {
+                  "size": "XS",
+                  "waist": {
+                    "min": 23,
+                    "max": 26
+                  },
+                  "hips": {
+                    "min": 35,
+                    "max": 37
+                  }
+                },
+                {
+                  "size": "S",
+                  "waist": {
+                    "min": 26,
+                    "max": 28
+                  },
+                  "hips": {
+                    "min": 37,
+                    "max": 39
+                  }
+                },
+                {
+                  "size": "M",
+                  "waist": {
+                    "min": 28,
+                    "max": 31
+                  },
+                  "hips": {
+                    "min": 39,
+                    "max": 41
+                  }
+                },
+                {
+                  "size": "L",
+                  "waist": {
+                    "min": 31,
+                    "max": 33
+                  },
+                  "hips": {
+                    "min": 41,
+                    "max": 43
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "LEGWEAR",
+          "table": [
+            {
+              "title": "TIGHTS",
+              "header": ["SIZE", "HEIGHT (ft' inc'')", "WEIGHT (LB)"],
+              "data": [
+                {
+                  "size": "1 / XS",
+                  "height": {
+                    "min": "4'7''",
+                    "max": "5'3''"
+                  },
+                  "weight": {
+                    "min": 77,
+                    "max": 121
+                  }
+                },
+                {
+                  "size": "2 / S",
+                  "height": {
+                    "min": "5'2''",
+                    "max": "5'6''"
+                  },
+                  "weight": {
+                    "min": 110,
+                    "max": 143
+                  }
+                },
+                {
+                  "size": "3 / M",
+                  "height": {
+                    "min": "5'6''",
+                    "max": "5'9''"
+                  },
+                  "weight": {
+                    "min": 127,
+                    "max": 154
+                  }
+                },
+                {
+                  "size": "4 / L",
+                  "height": {
+                    "min": "5'9''",
+                    "max": "6'1''"
+                  },
+                  "weight": {
+                    "min": 143,
+                    "max": 176
+                  }
+                },
+                {
+                  "size": "5 / XL",
+                  "height": {
+                    "min": "5'1''",
+                    "max": "6'2''"
+                  },
+                  "weight": {
+                    "min": 176,
+                    "max": 220
+                  }
+                },
+                {
+                  "size": "XL Long",
+                  "height": {
+                    "min": "5'9''",
+                    "max": "6'2''"
+                  },
+                  "weight": {
+                    "min": 176,
+                    "max": 220
+                  }
+                }
+              ]
+            },
+            {
+              "title": "STOCKINGS",
+              "header": ["SIZE", "HEIGHT (ft' inc'')", "WEIGHT (LB)"],
+              "data": [
+                {
+                  "size": "1/2 - S/M",
+                  "height": {
+                    "min": "4'7''",
+                    "max": "5'6''"
+                  },
+                  "weight": {
+                    "min": 77,
+                    "max": 143
+                  }
+                },
+                {
+                  "size": "3/4 - M/L",
+                  "height": {
+                    "min": "5'6''",
+                    "max": "6'1''"
+                  },
+                  "weight": {
+                    "min": 143,
+                    "max": 220
+                  }
+                }
+              ]
+            },
+            {
+              "title": "LEGGINGS",
+              "header": ["SIZE", "HEIGHT (IN)", "WAIST (IN)", "HIPS (IN)"],
+              "details": {
+                "image": "/images/Women_Leggings_clz.svg",
+                "qna": [
+                  {
+                    "q": "Height",
+                    "a": "Measure the height from head to toe, standing straight against a wall."
+                  },
+                  {
+                    "q": "Waist",
+                    "a": "Measure the waist by placing the tape measure around the navel. "
+                  },
+                  {
+                    "q": "Hips",
+                    "a": "Measure the circumference of the hips by placing the tape measure around the widest point around the buttocks. "
+                  }
+                ]
+              },
+              "data": [
+                {
+                  "size": "XS / 0-2",
+                  "height": {
+                    "min": 61,
+                    "max": 63
+                  },
+                  "waist": {
+                    "min": 24,
+                    "max": 27
+                  },
+                  "hips": {
+                    "min": 32,
+                    "max": 35
+                  }
+                },
+                {
+                  "size": "S / 4-6",
+                  "height": {
+                    "min": 63,
+                    "max": 65
+                  },
+                  "waist": {
+                    "min": 27,
+                    "max": 29
+                  },
+                  "hips": {
+                    "min": 35,
+                    "max": 37
+                  }
+                },
+                {
+                  "size": "M / 8-10",
+                  "height": {
+                    "min": 65,
+                    "max": 67
+                  },
+                  "waist": {
+                    "min": 29,
+                    "max": 32
+                  },
+                  "hips": {
+                    "min": 37,
+                    "max": 39
+                  }
+                },
+                {
+                  "size": "L / 12-14",
+                  "height": {
+                    "min": 67,
+                    "max": 69
+                  },
+                  "waist": {
+                    "min": 32,
+                    "max": 34
+                  },
+                  "hips": {
+                    "min": 39,
+                    "max": 42
+                  }
+                },
+                {
+                  "size": "XL / 16-18",
+                  "height": {
+                    "min": 69,
+                    "max": 71
+                  },
+                  "waist": {
+                    "min": 34,
+                    "max": 36
+                  },
+                  "hips": {
+                    "min": 42,
+                    "max": 44
+                  }
+                }
+              ]
+            },
+            {
+              "title": "SOCKS",
+              "header": ["SIZE", "FOOT LENGTH (IN)"],
+              "data": [
+                {
+                  "size": "ONE SIZE (34-40)",
+                  "footLength": {
+                    "min": 8,
+                    "max": 10
+                  }
+                },
+                {
+                  "size": "34-36",
+                  "footLength": {
+                    "min": 8,
+                    "max": 9
+                  }
+                },
+                {
+                  "size": "37-39",
+                  "footLength": {
+                    "min": 9,
+                    "max": 10
+                  }
+                },
+                {
+                  "size": "40-41",
+                  "footLength": {
+                    "min": 10,
+                    "max": 11
+                  }
+                },
+                {
+                  "size": "1/2 - S/M",
+                  "footLength": {
+                    "min": 8,
+                    "max": 10
+                  }
+                },
+                {
+                  "size": "3/4 - M/L",
+                  "footLength": {
+                    "min": 10,
+                    "max": 12
+                  }
+                },
+                {
+                  "size": "36-38",
+                  "footLength": {
+                    "min": 8,
+                    "max": 9
+                  }
+                },
+                {
+                  "size": "39-41",
+                  "footLength": {
+                    "min": 10,
+                    "max": 11
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "for": "MEN",
+      "data": [
+        {
+          "category": "SWIMWEAR",
+          "table": [
+            {
+              "title": "SWIMWEAR",
+              "header": ["SIZE", "WAIST (IN)", "HIPS (IN)", "THIGH (IN)"],
+              "details": {
+                "image": "/images/Men_Swimwear_clz.svg",
+                "qna": [
+                  {
+                    "q": "Waist",
+                    "a": "Measure the waist by placing the tape measure around the navel. "
+                  },
+                  {
+                    "q": "Hips",
+                    "a": "Measure the circumference of the hips by placing the tape measure around the widest point around the buttocks. "
+                  },
+                  {
+                    "q": "Thigh",
+                    "a": "Measure the widest point of the thigh. "
+                  }
+                ]
+              },
+              "data": [
+                {
+                  "size": "S",
+                  "waist": {
+                    "min": 29,
+                    "max": 31
+                  },
+                  "hips": {
+                    "min": 35,
+                    "max": 37
+                  },
+                  "thigh": {
+                    "min": 19,
+                    "max": 20
+                  }
+                },
+                {
+                  "size": "M",
+                  "waist": {
+                    "min": 31,
+                    "max": 33
+                  },
+                  "hips": {
+                    "min": 37,
+                    "max": 39
+                  },
+                  "thigh": {
+                    "min": 20,
+                    "max": 22
+                  }
+                },
+                {
+                  "size": "L",
+                  "waist": {
+                    "min": 33,
+                    "max": 35
+                  },
+                  "hips": {
+                    "min": 39,
+                    "max": 41
+                  },
+                  "thigh": {
+                    "min": 22,
+                    "max": 23
+                  }
+                },
+                {
+                  "size": "XL",
+                  "waist": {
+                    "min": 35,
+                    "max": 37
+                  },
+                  "hips": {
+                    "min": 41,
+                    "max": 43
+                  },
+                  "thigh": {
+                    "min": 23,
+                    "max": 25
+                  }
+                },
+                {
+                  "size": "XXL",
+                  "waist": {
+                    "min": 37,
+                    "max": 40
+                  },
+                  "hips": {
+                    "min": 43,
+                    "max": 45
+                  },
+                  "thigh": {
+                    "min": 25,
+                    "max": 27
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "LEGWEAR",
+          "table": [
+            {
+              "title": "SOCKS",
+              "header": ["SIZE", "FOOT LENGTH (IN)"],
+              "data": [
+                {
+                  "size": "ONE SIZE (40-47)",
+                  "footLength": {
+                    "min": 10,
+                    "max": 12
+                  }
+                },
+                {
+                  "size": "40-41",
+                  "footLength": {
+                    "min": 9,
+                    "max": 10
+                  }
+                },
+                {
+                  "size": "42-43",
+                  "footLength": {
+                    "min": 10,
+                    "max": 11
+                  }
+                },
+                {
+                  "size": "44-45",
+                  "footLength": {
+                    "min": 11,
+                    "max": 12
+                  }
+                },
+                {
+                  "size": "46-47",
+                  "footLength": {
+                    "min": 12,
+                    "max": 13
+                  }
+                },
+                {
+                  "size": "1/2 - S/M",
+                  "footLength": {
+                    "min": 8,
+                    "max": 10
+                  }
+                },
+                {
+                  "size": "3/4 - M/L",
+                  "footLength": {
+                    "min": 10,
+                    "max": 12
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "for": "KIDS",
+      "data": [
+        {
+          "category": "SWIMWEAR",
+          "table": [
+            {
+              "title": "GIRL",
+              "header": [
+                "AGE",
+                "HEIGHT (IN)",
+                "CHEST (IN)",
+                "WAIST (IN)",
+                "HIPS (IN)"
+              ],
+              "details": {
+                "image": "/images/Girls_Swimwear-02_clz.svg",
+                "qna": [
+                  {
+                    "q": "Height",
+                    "a": "Measure the height from head to toe, standing straight against a wall. "
+                  },
+                  {
+                    "q": "Chest",
+                    "a": "Measure the circumference of the chest by placing the tape measure under the armpits."
+                  },
+                  {
+                    "q": "Waist",
+                    "a": "Measure the waist by placing the tape measure around the navel."
+                  },
+                  {
+                    "q": "Hips",
+                    "a": "Measure the circumference of the hips by placing the tape measure around the widest point around the buttocks. "
+                  }
+                ]
+              },
+              "data": [
+                {
+                  "age": 2,
+                  "height": {
+                    "min": 32,
+                    "max": 37
+                  },
+                  "chest": {
+                    "min": 19,
+                    "max": 21
+                  },
+                  "waist": {
+                    "min": 18,
+                    "max": 19
+                  },
+                  "hips": {
+                    "min": 20,
+                    "max": 22
+                  }
+                },
+                {
+                  "age": 4,
+                  "height": {
+                    "min": 37,
+                    "max": 42
+                  },
+                  "chest": {
+                    "min": 21,
+                    "max": 22
+                  },
+                  "waist": {
+                    "min": 19,
+                    "max": 20
+                  },
+                  "hips": {
+                    "min": 22,
+                    "max": 24
+                  }
+                },
+                {
+                  "age": 6,
+                  "height": {
+                    "min": 42,
+                    "max": 45
+                  },
+                  "chest": {
+                    "min": 22,
+                    "max": 24
+                  },
+                  "waist": {
+                    "min": 20,
+                    "max": 21
+                  },
+                  "hips": {
+                    "min": 24,
+                    "max": 25
+                  }
+                },
+                {
+                  "age": 8,
+                  "height": {
+                    "min": 45,
+                    "max": 49
+                  },
+                  "chest": {
+                    "min": 24,
+                    "max": 25
+                  },
+                  "waist": {
+                    "min": 21,
+                    "max": 22
+                  },
+                  "hips": {
+                    "min": 25,
+                    "max": 27
+                  }
+                },
+                {
+                  "age": 10,
+                  "height": {
+                    "min": 49,
+                    "max": 53
+                  },
+                  "chest": {
+                    "min": 25,
+                    "max": 27
+                  },
+                  "waist": {
+                    "min": 22,
+                    "max": 23
+                  },
+                  "hips": {
+                    "min": 27,
+                    "max": 29
+                  }
+                },
+                {
+                  "age": 12,
+                  "height": {
+                    "min": 53,
+                    "max": 58
+                  },
+                  "chest": {
+                    "min": 27,
+                    "max": 30
+                  },
+                  "waist": {
+                    "min": 23,
+                    "max": 25
+                  },
+                  "hips": {
+                    "min": 29,
+                    "max": 33
+                  }
+                },
+                {
+                  "age": 14,
+                  "height": {
+                    "min": 58,
+                    "max": 63
+                  },
+                  "chest": {
+                    "min": 30,
+                    "max": 33
+                  },
+                  "waist": {
+                    "min": 25,
+                    "max": 27
+                  },
+                  "hips": {
+                    "min": 33,
+                    "max": 37
+                  }
+                }
+              ]
+            },
+            {
+              "title": "BOY",
+              "header": ["AGE", "HEIGHT (IN)", "WAIST (IN)", "HIPS (IN)"],
+              "details": {
+                "image": "/images/Boys_Swimwear_clz.svg",
+                "qna": [
+                  {
+                    "q": "Height",
+                    "a": "Measure the height from head to toe, standing straight against a wall."
+                  },
+                  {
+                    "q": "Waist",
+                    "a": "Measure the waist by placing the tape measure around the navel."
+                  },
+                  {
+                    "q": "Hips",
+                    "a": "Measure the circumference of the hips by placing the tape measure around the widest point around the buttocks."
+                  }
+                ]
+              },
+              "data": [
+                {
+                  "age": 2,
+                  "height": {
+                    "min": 33,
+                    "max": 38
+                  },
+                  "waist": {
+                    "min": 20,
+                    "max": 21
+                  },
+                  "hips": {
+                    "min": 22,
+                    "max": 24
+                  }
+                },
+                {
+                  "age": 4,
+                  "height": {
+                    "min": 38,
+                    "max": 43
+                  },
+                  "waist": {
+                    "min": 21,
+                    "max": 22
+                  },
+                  "hips": {
+                    "min": 24,
+                    "max": 25
+                  }
+                },
+                {
+                  "age": 6,
+                  "height": {
+                    "min": 43,
+                    "max": 48
+                  },
+                  "waist": {
+                    "min": 22,
+                    "max": 23
+                  },
+                  "hips": {
+                    "min": 25,
+                    "max": 27
+                  }
+                },
+                {
+                  "age": 8,
+                  "height": {
+                    "min": 48,
+                    "max": 53
+                  },
+                  "waist": {
+                    "min": 23,
+                    "max": 24
+                  },
+                  "hips": {
+                    "min": 27,
+                    "max": 28
+                  }
+                },
+                {
+                  "age": 10,
+                  "height": {
+                    "min": 53,
+                    "max": 57
+                  },
+                  "waist": {
+                    "min": 24,
+                    "max": 25
+                  },
+                  "hips": {
+                    "min": 28,
+                    "max": 30
+                  }
+                },
+                {
+                  "age": 12,
+                  "height": {
+                    "min": 57,
+                    "max": 62
+                  },
+                  "waist": {
+                    "min": 25,
+                    "max": 26
+                  },
+                  "hips": {
+                    "min": 30,
+                    "max": 32
+                  }
+                },
+                {
+                  "age": 14,
+                  "height": {
+                    "min": 62,
+                    "max": 66
+                  },
+                  "waist": {
+                    "min": 26,
+                    "max": 28
+                  },
+                  "hips": {
+                    "min": 32,
+                    "max": 34
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "TIGHTS",
+          "table": [
+            {
+              "title": "GIRL",
+              "header": ["AGE", "HEIGHT (IN)"],
+              "data": [
+                {
+                  "age": "2",
+                  "height": {
+                    "min": 34,
+                    "max": 36
+                  }
+                },
+                {
+                  "age": "2-4",
+                  "height": {
+                    "min": 36,
+                    "max": 41
+                  }
+                },
+                {
+                  "age": "4-6",
+                  "height": {
+                    "min": 41,
+                    "max": 46
+                  }
+                },
+                {
+                  "age": "6-8",
+                  "height": {
+                    "min": 46,
+                    "max": 50
+                  }
+                },
+                {
+                  "age": "8-10",
+                  "height": {
+                    "min": 50,
+                    "max": 54
+                  }
+                },
+                {
+                  "age": "10-13",
+                  "height": {
+                    "min": 54,
+                    "max": 61
+                  }
+                }
+              ]
+            },
+            {
+              "title": "NEWBORN ",
+              "header": ["MONTHS", "HEIGHT (IN)"],
+              "data": [
+                {
+                  "months": "0-6",
+                  "height": {
+                    "min": 24,
+                    "max": 27
+                  }
+                },
+                {
+                  "months": "6-12",
+                  "height": {
+                    "min": 27,
+                    "max": 30
+                  }
+                },
+                {
+                  "months": "12-18",
+                  "height": {
+                    "min": 30,
+                    "max": 33
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "LEGGINGS",
+          "table": [
+            {
+              "title": "GIRL",
+              "header": ["AGE", "HEIGHT (IN)", "WAIST (IN)"],
+              "details": {
+                "image": "/images/Girls_Leggings_clz.svg",
+                "qna": [
+                  {
+                    "q": "Height",
+                    "a": "Measure the height from head to toe, standing straight against a wall."
+                  },
+                  {
+                    "q": "Waist",
+                    "a": "Measure the waist by placing the tape measure around the navel."
+                  }
+                ]
+              },
+              "data": [
+                {
+                  "age": "2",
+                  "height": {
+                    "min": 33,
+                    "max": 38
+                  },
+                  "waist": {
+                    "min": 16,
+                    "max": 18
+                  }
+                },
+                {
+                  "age": "3-4",
+                  "height": {
+                    "min": 39,
+                    "max": 43
+                  },
+                  "waist": {
+                    "min": 18,
+                    "max": 19
+                  }
+                },
+                {
+                  "age": "5-6",
+                  "height": {
+                    "min": 43,
+                    "max": 47
+                  },
+                  "waist": {
+                    "min": 19,
+                    "max": 21
+                  }
+                },
+                {
+                  "age": "7-8",
+                  "height": {
+                    "min": 47,
+                    "max": 51
+                  },
+                  "waist": {
+                    "min": 21,
+                    "max": 23
+                  }
+                },
+                {
+                  "age": "9-10",
+                  "height": {
+                    "min": 51,
+                    "max": 55
+                  },
+                  "waist": {
+                    "min": 23,
+                    "max": 24
+                  }
+                },
+                {
+                  "age": "11-12",
+                  "height": {
+                    "min": 55,
+                    "max": 59
+                  },
+                  "waist": {
+                    "min": 24,
+                    "max": 26
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "SOCKS",
+          "table": [
+            {
+              "title": "KIDS",
+              "header": ["SIZE", "FOOT LENGTH (IN)", "AGE"],
+              "data": [
+                {
+                  "size": "25-27",
+                  "footLength": {
+                    "min": 5,
+                    "max": 6
+                  },
+                  "age": "2-4"
+                },
+                {
+                  "size": "28-30",
+                  "footLength": {
+                    "min": 6,
+                    "max": 7
+                  },
+                  "age": "4-6"
+                },
+                {
+                  "size": "31-33",
+                  "footLength": {
+                    "min": 7,
+                    "max": 8
+                  },
+                  "age": "6-8"
+                },
+                {
+                  "size": "34-36",
+                  "footLength": {
+                    "min": 8,
+                    "max": 9
+                  },
+                  "age": "8-10"
+                },
+                {
+                  "size": "37-39",
+                  "footLength": {
+                    "min": 9,
+                    "max": 10
+                  },
+                  "age": "10-13"
+                },
+                {
+                  "size": "1/2 - S/M",
+                  "footLength": {
+                    "min": 25,
+                    "max": 30
+                  },
+                  "age": "6 - 8"
+                },
+                {
+                  "size": "3/4 - M/L",
+                  "footLength": {
+                    "min": 31,
+                    "max": 36
+                  },
+                  "age": "8 - 9"
+                }
+              ]
+            },
+            {
+              "title": "NEWBORN SOCKS ",
+              "header": ["SIZE", "FOOT LENGTH (IN)", "MONTHS"],
+              "data": [
+                {
+                  "size": "15-18",
+                  "footLength": {
+                    "min": 3,
+                    "max": 4
+                  },
+                  "months": "3-9"
+                },
+                {
+                  "size": "19-21",
+                  "footLength": {
+                    "min": 4,
+                    "max": 5
+                  },
+                  "months": "9-18"
+                },
+                {
+                  "size": "22-24",
+                  "footLength": {
+                    "min": 5,
+                    "max": 6
+                  },
+                  "months": "18-24"
+                }
+              ]
+            },
+            {
+              "title": "NEWBORN SLIPPERS",
+              "header": ["MONTHS", "FOOT LENGTH (IN)"],
+              "data": [
+                {
+                  "months": "0-6",
+                  "footLength": {
+                    "min": 3,
+                    "max": 4
+                  }
+                },
+                {
+                  "months": "6-12",
+                  "footLength": {
+                    "min": 4,
+                    "max": 5
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ]
 }

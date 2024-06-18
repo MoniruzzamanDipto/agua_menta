@@ -1,0 +1,16 @@
+.menu {
+  list-style: none;
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+}
+.menu li:first-child {
+  border-top: 1px solid var(--border_color);
+}
+.menu li {
+  border-bottom: 1px solid var(--border_color);
+  padding: 12px 6px;
+}
+.menu .active {
+  background: #f8f8f8;
+}

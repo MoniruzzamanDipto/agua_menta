@@ -377,5 +377,8 @@
   "CustomerService": "Customer Service",
   "ProductGuide": "Product Guide",
   "AboutUs": "About Us",
-  "LegalArea": "Legal Area"
+  "LegalArea": "Legal Area",
+  "Men": "Men",
+  "Women": "Women",
+  "Kids": "Kids"
 }

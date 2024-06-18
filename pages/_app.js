@@ -13,6 +13,7 @@ import "~/styles/globals.css";
 import { Roboto } from "@next/font/google";
 import { appWithI18Next } from "ni18n";
 import { ni18nConfig } from "../ni18n.config";
+import "react-tabs/style/react-tabs.css";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],

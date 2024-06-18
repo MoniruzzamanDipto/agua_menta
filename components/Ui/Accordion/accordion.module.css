@@ -8,11 +8,25 @@
   overflow: hidden;
 }
 
+.simpleCard {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: none;
+  border-radius: 0px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
 .header {
   padding: 1rem;
   font-weight: 700;
-  border-bottom: 1px solid #b9b9b9;
+  border-bottom: 1px solid var(--border_color);
   cursor: pointer;
+}
+
+.simpleCard .header {
+  padding: 1.3rem 0rem;
 }
 
 .icon {
@@ -27,6 +41,10 @@
   right: 12px;
   top: 12px;
   transform: rotate(180deg);
+}
+
+.simpleCard .icon {
+  top: 16px;
 }
 
 .icon[aria-expanded="true"] {
@@ -46,4 +64,8 @@
 
 .body {
   padding: 1rem;
+}
+
+.simpleCard .body {
+  padding: 1rem 0rem;
 }
