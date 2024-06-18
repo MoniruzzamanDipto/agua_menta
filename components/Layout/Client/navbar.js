@@ -240,22 +240,14 @@ const NavBar = () => {
                   </div>
                 </li>
               ))}
-              {session && (session.user.a || session.user.s.status) && (
-                <li className={c.list}>
-                  <div className={c.item}>
-                    <Link href="/dashboard">{t("dashboard")}</Link>
-                  </div>
-                </li>
-              )}
             </ul> */}
             <SwipeableNav items={cat} />
           </div>
-          <div className={c.track}>
-            <Link href="/order-track">
-              <GeoAlt width={18} height={18} />
-              {t("track_order")}
-            </Link>
-          </div>
+          {session && (session.user.a || session.user.s.status) && (
+            <div className={c.track}>
+              <Link href="/dashboard">{t("dashboard")}</Link>
+            </div>
+          )}
         </div>
       </nav>
     </>
