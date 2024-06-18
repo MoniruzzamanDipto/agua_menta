@@ -56,7 +56,6 @@
     "react-multi-select-component": "^4.1.13",
     "react-redux": "^7.2.6",
     "react-responsive-carousel": "^3.2.22",
-    "react-swipeable": "^7.0.1",
     "react-toastify": "^9.1.1",
     "sharp": "^0.33.0",
     "stripe": "^11.5.0",
