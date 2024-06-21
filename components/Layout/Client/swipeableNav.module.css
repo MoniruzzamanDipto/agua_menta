@@ -45,7 +45,7 @@
 }
 
 .swipeable_nav_container button {
-  background-color: #fff;
+  background-color: transparent;
   color: black;
   border: none;
   padding: 0;

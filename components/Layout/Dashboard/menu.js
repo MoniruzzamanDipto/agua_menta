@@ -279,6 +279,17 @@ const DashboardMenu = (props) => {
         },
       ],
     },
+    {
+      name: t("Contact Message"),
+      icon: <Envelope width={20} height={20} />,
+      target: "pageSettings",
+      subMenu: [
+        {
+          name: t("Contact Message"),
+          url: "/dashboard/contact",
+        },
+      ],
+    },
   ];
 
   const [clicked, setClicked] = useState("0");

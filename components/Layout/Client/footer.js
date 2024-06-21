@@ -18,6 +18,7 @@ import dynamic from "next/dynamic";
 
 const ImageLoader = dynamic(() => import("~/components/Image"));
 const Newsletter = dynamic(() => import("./newsletter"));
+const LanguageSwitcher = dynamic(() => import("~/components/LanguageSwitcher"));
 
 const Footer = (props) => {
   // Selecting settings from global state
@@ -43,7 +44,7 @@ const Footer = (props) => {
       },
       {
         name: t("Contact us"),
-        link: "/contact_us",
+        link: "/contact-us",
       },
     ],
     ProductGuide: [
@@ -173,6 +174,7 @@ const Footer = (props) => {
                 <div className={classes.address}>
                   <h1>{settings.settingsData.description}</h1>
                 </div>
+                <LanguageSwitcher/>
               </div>
               <div className="col-md-9">
                 <div className="row">
