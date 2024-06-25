@@ -3834,5 +3834,82 @@
         }
       ]
     }
+  ],
+  "styleGuide": [
+    {
+      "category": "WOMEN",
+      "data": [
+        {
+          "title": "Tights",
+          "items": [
+            {
+              "title": "Control Top Tights",
+              "image": "/images/collant-controlTop.svg",
+              "description": "Control top tights with a shaping, slimming effect. Thanks to a thorough study of the tension and compression of the upper, it flattens the tummy and slims the silhouette, containing the hips and thighs."
+            },
+            {
+              "title": "Push Up Tights",
+              "image": "/images/collant-pushup.svg",
+              "description": "Tights with push-up buttocks to enhance its shape even under tight fitting clothing. The differentiated structure of the upper has a “push-up” action to enhance the female silhouette."
+            },
+            {
+              "title": "Total Shaper Tights",
+              "image": "/images/collant-TotalShaper.svg",
+              "description": "The ultimate evolution in the field of shaping, for a 3D-effect silhouette. Tights carefully designed to enhance the silhouette providing full control for tummy, hips, bottom and giving light support to legs."
+            },
+            {
+              "title": "Action Tights",
+              "image": "/images/collant-action.svg",
+              "description": "Perfect fitting for the maximum comfort. Designed to exert compression on the legs, for lightness and vitality. The superb fit guarantees utmost comfort. Ideal for anyone who spends a lot of time standing or for travelling."
+            },
+            {
+              "title": "Maternity Tights",
+              "image": "/images/collant-maternity.svg",
+              "description": "Tights with inner panel which adapts to the shape of the stomach. The micromesh body provides increased support and the soft touch fabric on the legs gives a pleasant soft handle. Recommended for pregnant women who do not want to give up the pleasure of wearing tights."
+            },
+            {
+              "title": "Tights with Graduated Compression",
+              "image": "/images/collant-compressione-graduata.svg",
+              "description": "Supporting tights with beneficial, revitalizing effects for refreshed, rested legs. The compression zones are distributed ideally and anatomically: the compression is greatest in the ankles, gradually decreasing on the calves and knee until it is very light on the thigh. Helps with good blood circulation which then reduces the symptoms of fatigue and swelling of the legs. Ideal for those who spend a lot of time on their feet and flying in airplanes."
+            }
+          ]
+        },
+        {
+          "title": "Socks and stockings",
+          "items": [
+            {
+              "title": "Footsies",
+              "image": "/images/fantasmini.svg",
+              "description": "Intended for everyday wear in all seasons. Recommended wear with very low cut footwear (pumps and ballerina flats)."
+            },
+            {
+              "title": "Short socks",
+              "image": "/images/calzini-corti.svg",
+              "description": "High quality short socks intended for everyday wear in all seasons. Choose lower or higher cut - whatever suits you best."
+            },
+            {
+              "title": "Long Socks and Knee High Socks",
+              "image": "/images/calzini-lunghi.svg",
+              "description": "High quality long socks intended for everyday wear in all seasons. For those who don't like tights or hold-ups."
+            },
+            {
+              "title": "Maxi Knee-High Socks",
+              "image": "/images/maxi-gambaletti.svg",
+              "description": "Variety of over the knee socks. For those who don't like tights or hold-ups."
+            },
+            {
+              "title": "Control Top Tights",
+              "image": "/images/reggicalze.svg",
+              "description": "Control top tights with a shaping, slimming effect. Thanks to a thorough study of the tension and compression of the upper, it flattens the tummy and slims the silhouette, containing the hips and thighs."
+            },
+            {
+              "title": "Control Top Tights",
+              "image": "/images/collant-controlTop.svg",
+              "description": "Control top tights with a shaping, slimming effect. Thanks to a thorough study of the tension and compression of the upper, it flattens the tummy and slims the silhouette, containing the hips and thighs."
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
