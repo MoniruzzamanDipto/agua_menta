@@ -3898,18 +3898,195 @@
               "description": "Variety of over the knee socks. For those who don't like tights or hold-ups."
             },
             {
-              "title": "Control Top Tights",
+              "title": "Stockings (for suspender belts)",
               "image": "/images/reggicalze.svg",
-              "description": "Control top tights with a shaping, slimming effect. Thanks to a thorough study of the tension and compression of the upper, it flattens the tummy and slims the silhouette, containing the hips and thighs."
+              "description": "Stockings to be worn with a suspender belt for extra femininity."
             },
             {
-              "title": "Control Top Tights",
-              "image": "/images/collant-controlTop.svg",
-              "description": "Control top tights with a shaping, slimming effect. Thanks to a thorough study of the tension and compression of the upper, it flattens the tummy and slims the silhouette, containing the hips and thighs."
+              "title": "Hold-ups",
+              "image": "/images/autoreggenti.svg",
+              "description": "Recommended for those who do not like the waistband of tights."
+            }
+          ]
+        },
+        {
+          "title": "Leggings",
+          "items": [
+            {
+              "title": "Push Up Leggings",
+              "image": "/images/Leggins-pushup.svg",
+              "description": "Leggings created to enhance feminine features thanks to a technical solution that sculpts and lifts, and a two-way stretch fabric cut and sewn to create the “push-up” effect on the derriere. Ideal for modern women who opt for comfort without giving up a current, seductive look."
+            },
+            {
+              "title": "Total Shaper Leggings",
+              "image": "/images/Leggins-total-shaper.svg",
+              "description": "The specially designed fabric enhances the silhouette shaping the waist and the back side."
+            },
+            {
+              "title": "High Waisted Leggings",
+              "image": "/images/Leggins-vita-alta.svg",
+              "description": "High waisted leggings emphasize your waist and ensure a flattering fit."
+            },
+            {
+              "title": "Skinny Leggings",
+              "image": "/images/Leggins-skinny.svg",
+              "description": "Skinny leggings designed to emphasize your shape and silhoutte."
+            }
+          ]
+        },
+        {
+          "title": "Bikini top",
+          "items": [
+            {
+              "title": "Triangle bras",
+              "image": "/images/reggiseno_triangolo.svg",
+              "description": "Plunge style bra with triangular cups and no seams. Provides light support making it suitable for small and firm busts."
+            },
+            {
+              "title": "Demi-cup/balconette",
+              "image": "/images/balconcino11.svg",
+              "description": "Deep-cut bras which enhance the neckline and are wired to lift the bust. Cup may be seamed or seamless. Suitable for all busts, but particularly loved by women who don't like too much padding. Classic 'spectacle-shape'."
+            },
+            {
+              "title": "Push-up and super push-up (wired)",
+              "image": "/images/reggiseno_pushUp.svg",
+              "description": "Bras with special angled cups and wire further up the side of the cup. Enhances the bust by lifting and pushing it towards the centre of the chest. Greater volume is achieved through padding. May be seamed or seamless. Slightly padded or with super padding."
+            },
+            {
+              "title": "Push-up (no wiring)",
+              "image": "/images/reggiseno_senzaferretto.svg",
+              "description": "This bra has a special internal structure replacing the wire at the centre. Enhances the bust by lifting and pushing it towards the centre of the chest. Greater volume is achieved through padding."
+            },
+            {
+              "title": "Bandeau (wired)",
+              "image": "/images/reggiseno_fascia.svg",
+              "description": "Strapless bra which may have padded cups, wiring and side boning to provide greater support, or non-padded with internal wire support. Inside edge with silicon elastic to ensure adherence."
+            },
+            {
+              "title": "Bandeau (non-wired)",
+              "image": "/images/reggiseno_fascia_senza_ferretto.svg",
+              "description": "Low-neck, padded bandeau, seamless and non-wired. The special 'shell' structure inside the bra, supports and holds the bust firmly. Wide silicone underband to ensure excellent support."
+            }
+          ]
+        },
+        {
+          "title": "Bikini bottom",
+          "items": [
+            {
+              "title": "Briefs",
+              "image": "/images/slip.svg",
+              "description": "Slightly high cut, may have varying side and waist measurements: low medium, high. The rear part of the garment covers the buttocks."
+            },
+            {
+              "title": "French knickers",
+              "image": "/images/culotte.svg",
+              "description": "Covers both buttocks and hips, may model slightly or cover, depending on fabric used. May be high, medium or low-waisted."
+            },
+            {
+              "title": "Thongs and brazilian cut",
+              "image": "/images/brasiliano.svg",
+              "description": "Front section similar to briefs with tiny rear section leaving buttocks uncovered. May be high, medium or low-waisted. The Brazilian Cut model has a wider rear section than the thong."
             }
           ]
         }
       ]
+    },
+    {
+      "category": "MEN",
+      "data": [
+        {
+          "title": "Briefs",
+          "items": [
+            {
+              "title": "Briefs",
+              "image": "/images/slip (1).svg",
+              "description": "Calzedonia briefs have classic lines with medium-cut waist and slightly high-cut legs."
+            }
+          ]
+        },
+        {
+          "title": "Boxers",
+          "items": [
+            {
+              "title": "Boxers",
+              "image": "/images/slip (1).svg",
+              "description": "Calzedonia boxers may be soft long-length shorts or slightly shorter with closer fitting leg."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fabrics": [
+    {
+      "title": "Denim",
+      "image": "/images/Denim.svg",
+      "description": "Denim is a robust cotton fabric that is easily adaptable and very resistant to wear. Denim fabric is made from a twill weave. It used to be made from linen warp and a cotton weave and it is now fully made from cotton. It is characterised by its robustness and resistance (in terms of worn material), together with its singular adaptability. Denim is a go-to fabric everywhere in the world for the manufacturing of jeans and denim clothing. It is also used to make jackets, shirts and trousers. The etymology of the word ‘denim’ indicates that it comes from the French ‘serge de nimes’, which refers to the city of Nimes, in southern France, from which the fabric was sent to international markets."
+    },
+    {
+      "title": "Cashmere",
+      "image": "/images/Cashmere.svg",
+      "description": "Cashmere is the name of a fine natural textile fiber that is obtained from goat fur. Its very high quality makes it silky and velvety to touch and provides a sense of comfort and softness that caresses the skin. Cashmere is also warmer than wool, as its insulating capacity is 10 times greater. However, it can also be worn in the warmer months because, while it insulates the body, it also provides perfect protection against intense heat."
+    },
+    {
+      "title": "Linen",
+      "image": "/images/Linen.svg",
+      "description": "Linen is a very ancient natural fiber that derives from the flax plant; it looks shiny and feels cool and slippery to the touch. Linen is categorised according to fiber’s degree of fineness: fine linen, used for fine yarns that are suitable for making fine cloth, lace and crochet, medium-grade linen woven for commonly-used cloth; and heavier linen for plain cloth. Linen fabric is used to make household linen (table clothes, sheets, towels) and clothing mostly for the summer season. As the fiber is rigid, the clothing creases; to counter this, it is mixed with other fiber such as cotton or viscose. Linen is mainly characterised by the following: resistance to wear, feels very breathable and fresh, very easy to tolerate even for those with very sensitive skin. Linen is a fiber that is still farmed naturally. it is eco-sustainable and is fully recyclable."
+    },
+    {
+      "title": "Cotton",
+      "image": "/images/Cotton.svg",
+      "description": "Cotton is a vegetable fiber produced from the plant of the same name. It is soft, smooth and light and is particularly suitable for being worn against the skin. It absorbs well, doesn't irritate the skin or cause allergies."
+    },
+    {
+      "title": "Silk",
+      "image": "/images/Silk.svg",
+      "description": "Silk is an animal fiber produced by silk worms. It has a unique sheen and easily absorbs the nuances from rich-coloured dyes. Silk thread is extremely elastic, giving the fabric its unusual strength. It is hypoallergenic, retains body heat and is cool even in hot weather. It absorbs moisture, and doesn't irritate the skin."
+    },
+    {
+      "title": "Wool",
+      "image": "/images/Wool.svg",
+      "description": "Wool is a warm animal fiber, which provides excellent insulation. Finer, wavy yarns provide greater insulation. Wool fiber is elastic and extremely resistant to wear."
+    },
+    {
+      "title": "Viscose",
+      "image": "/images/Viscose.svg",
+      "description": "Viscose is an artificial fiber produced from cellulose. It is silky soft to touch and provides the comfort that is typical of vegetable fiber. It is wear-resistant, absorbent and doesn't irritate skin."
+    },
+    {
+      "title": "Lyocell",
+      "image": "/images/Lyocell.svg",
+      "description": "Lyocell is an artificial fiber that is obtained from cellulose through a specific ecological process. It is soft and pleasant to the touch, breathable, durable and luminous."
+    },
+    {
+      "title": "Modal",
+      "image": "/images/Modal.svg",
+      "description": "Modal is an artificial fiber produced from cellulose. It is hard-wearing and soft and has an elegant sheen."
+    },
+    {
+      "title": "Micromodal",
+      "image": "/images/Micromodal.svg",
+      "description": "Micromodal has the same characteristics as modal, but has a finer weave making it breathable, soft and extremely elastic."
+    },
+    {
+      "title": "Polyamide (nylon)",
+      "image": "/images/Polyamide.svg",
+      "description": "Polyamide (nylon) is a synthetic fiber used for tights and hosiery. It has an elevated resistance to tears and deformation. It is easy to maintain (washing), has an excellent dye-ability and wrinkle resistance."
+    },
+    {
+      "title": "Elastane (Lycra)",
+      "image": "/images/Elastane.svg",
+      "description": "Elastane (Lycra) is a synthetic fiber used to elasticize fabrics. Due to its high elasticity can be used in a pure form or mixed with inflexible fiber giving them elasticity. It is resistant to oxidising agents and contaminants."
+    },
+    {
+      "title": "Microfiber",
+      "image": "/images/Microfibre.svg",
+      "description": "Microfiber is obtained from synthetic fiber, generally a combination of polyamide and elastane. Microfiber is a highly technological fabric. Its tight but lightweight weave makes it extremely breathable and protective against the elements and cold weather."
+    },
+    {
+      "title": "Polyester",
+      "image": "/images/Polyester.svg",
+      "description": "Polyester is a synthetic fiber used to produce silky women's clothing, lingerie and undergarments. It is an elastic fiber, resistant to light and has a high resistance to tearing."
     }
   ]
 }

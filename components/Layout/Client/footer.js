@@ -54,7 +54,7 @@ const Footer = (props) => {
       },
       {
         name: t("Style guide"),
-        link: "/product-style-size",
+        link: "/product-style-guide",
       },
       {
         name: t("Summer style guide"),
@@ -174,7 +174,7 @@ const Footer = (props) => {
                 <div className={classes.address}>
                   <h1>{settings.settingsData.description}</h1>
                 </div>
-                <LanguageSwitcher/>
+                <LanguageSwitcher />
               </div>
               <div className="col-md-9">
                 <div className="row">

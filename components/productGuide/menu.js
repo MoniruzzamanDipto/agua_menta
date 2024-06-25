@@ -16,7 +16,7 @@ export default function ProductGuideMenu() {
     {
       image: "/images/style.svg",
       title: t("Style guide"),
-      link: "/product-guide-style",
+      link: "/product-style-guide",
     },
     {
       image: "/images/fabrics.svg",
@@ -24,7 +24,7 @@ export default function ProductGuideMenu() {
       link: "/product-guide-fabrics",
     },
   ];
-  console.log(router.asPath);
+
   return (
     <ul className={c.menu}>
       {menu.map((x, i) => (

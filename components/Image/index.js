@@ -33,7 +33,7 @@ export default function ImageLoader({
       onClick={click || null}
       quality={quality || null}
       priority={priority || undefined}
-      onLoadingComplete={(result) => {
+      onLoad={(result) => {
         if (result.naturalWidth === 0) {
           // Broken image
           set_imgSrc(placeholder);
