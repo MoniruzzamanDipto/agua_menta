@@ -70,7 +70,7 @@ const Footer = (props) => {
       },
       {
         name: t("Care"),
-        link: "/care",
+        link: "/product-guide-care",
       },
       {
         name: t("Gift card"),

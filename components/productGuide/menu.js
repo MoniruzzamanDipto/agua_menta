@@ -23,6 +23,11 @@ export default function ProductGuideMenu() {
       title: t("Fabrics"),
       link: "/product-guide-fabrics",
     },
+    {
+      image: "/images/curadeicapi.svg",
+      title: t("Caring for your garments"),
+      link: "/product-guide-care",
+    },
   ];
 
   return (

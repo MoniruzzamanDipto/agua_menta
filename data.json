@@ -4088,5 +4088,59 @@
       "image": "/images/Polyester.svg",
       "description": "Polyester is a synthetic fiber used to produce silky women's clothing, lingerie and undergarments. It is an elastic fiber, resistant to light and has a high resistance to tearing."
     }
+  ],
+  "care": [
+    {
+      "title": "Machine-wash in cold water (max. 30°C-85°F) with like color",
+      "image": "/images/icon-care-machine-wash-30.svg"
+    },
+    {
+      "title": "Hand-wash separately in cold water",
+      "image": "/images/icon-care-hand-wash.svg"
+    },
+    {
+      "title": "Do not wash",
+      "image": "/images/icon-care-do-not-wash.svg"
+    },
+    {
+      "title": "Iron on a low temperature, if necessary (max. 110°C-230°F)",
+      "image": "/images/icon-care-ironing-1.svg"
+    },
+    {
+      "title": "Iron on a warm temperature, if necessary (max. 150°C-300°F)",
+      "image": "/images/icon-care-ironing-2.svg"
+    },
+    {
+      "title": "Iron on a warm temperature, if necessary (max. 200°C-390°F)",
+      "image": "/images/icon-care-ironing-3.svg"
+    },
+    {
+      "title": "Do not iron",
+      "image": "/images/icon-care-do-not-iron.svg"
+    },
+    {
+      "title": "Do not tumble dry",
+      "image": "/images/icon-care-do-not-tumble-dry.svg"
+    },
+    {
+      "title": "May be dry-cleaned using trichloroethylene",
+      "image": "/images/icon-care-drycleaning-trichloroethylene.svg"
+    },
+    {
+      "title": "Do not dry clean",
+      "image": "/images/icon-care-do-not-dryclean.svg"
+    },
+    {
+      "title": "Dry flat",
+      "image": "/images/icon-care-dry-flat.svg"
+    },
+    {
+      "title": "Line dry",
+      "image": "/images/icon-care-line-dry.svg"
+    },
+    {
+      "title": "Very gentle wet cleaning",
+      "image": "/images/icon-care-very-gentle-wetcleaning.svg"
+    }
   ]
 }
