@@ -21,6 +21,7 @@
     "@next-auth/mongodb-adapter": "^1.1.1",
     "@next/bundle-analyzer": "^13.4.12",
     "@next/font": "^13.1.6",
+    "@react-google-maps/api": "^2.19.3",
     "@reduxjs/toolkit": "^1.6.2",
     "@stripe/react-stripe-js": "^1.16.1",
     "@stripe/stripe-js": "^1.46.0",
