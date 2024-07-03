@@ -59,31 +59,6 @@ export default function EditHeaderCarousel({ data, mutate, close }) {
             name="title"
           />
         </div>
-        <div className="pb-3">
-          <label htmlFor="header-subtitle" className="form-label">
-            {t("Subtitle")}*
-          </label>
-          <input
-            type="text"
-            id="header-subtitle"
-            className="form-control"
-            required
-            defaultValue={data.subTitle}
-            name="subTitle"
-          />
-        </div>
-        <div className="pb-3">
-          <label htmlFor="header-desc" className="form-label">
-            {t("description")}*
-          </label>
-          <textarea
-            id="header-desc"
-            className="form-control"
-            required
-            defaultValue={data.description}
-            name="description"
-          />
-        </div>
         <div className="pb-5">
           <label htmlFor="header-url" className="form-label">
             {t("URL")}*

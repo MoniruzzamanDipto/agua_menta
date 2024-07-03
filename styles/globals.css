@@ -618,6 +618,13 @@ ul.thumbs {
   border-color: #333333;
 }
 
+.custom-carousel .carousel .control-arrow {
+  height: 80px !important;
+  width: 35px !important;
+  top: calc(50% - 80px) !important;
+  background: #111 !important;
+}
+
 @media (max-width: 768px) {
   .content_heading {
     font-size: 30px;

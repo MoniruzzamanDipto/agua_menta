@@ -97,8 +97,6 @@ const HomePageSetting = () => {
       setButtonState("loading");
       const data = {
         title: carouselTitle.current.value.trim(),
-        subTitle: carouselSubTitle.current.value.trim(),
-        description: carouselDesc.current.value.trim(),
         url: carouselUrl.current.value.trim(),
         image: carouselImage,
       };
@@ -556,8 +554,7 @@ const HomePageSetting = () => {
           <Table
             columns={columns}
             data={homePageData.carousel.carouselData}
-            searchKey="title"
-            searchPlaceholder="Title"
+            pagination
           />
           {permissions.edit && (
             <>
@@ -566,7 +563,7 @@ const HomePageSetting = () => {
                   <div className="pb-0">
                     <FileUpload
                       accept=".jpg,.png,.jpeg"
-                      label={`${t("image")}(750px x 750px)*`}
+                      label={`${t("image")}(1920px x 800px)*`}
                       maxFileSizeInBytes={2000000}
                       updateFilesCb={updateCarouselImage}
                       resetCb={resetCarouselImageInput}
@@ -582,29 +579,6 @@ const HomePageSetting = () => {
                       className="form-control"
                       required
                       ref={carouselTitle}
-                    />
-                  </div>
-                  <div className="pb-3">
-                    <label htmlFor="header-subtitle" className="form-label">
-                      {t("Subtitle")}*
-                    </label>
-                    <input
-                      type="text"
-                      id="header-subtitle"
-                      className="form-control"
-                      required
-                      ref={carouselSubTitle}
-                    />
-                  </div>
-                  <div className="pb-3">
-                    <label htmlFor="header-desc" className="form-label">
-                      {t("description")}*
-                    </label>
-                    <textarea
-                      id="header-desc"
-                      className="form-control"
-                      required
-                      ref={carouselDesc}
                     />
                   </div>
                   <div className="pb-5">
@@ -627,24 +601,6 @@ const HomePageSetting = () => {
                     />
                   </div>
                 </form>
-              </Accordion>
-              <Accordion title={t("Header carousel background")}>
-                <div className="pb-0">
-                  <FileUpload
-                    accept=".jpg,.png,.jpeg"
-                    label={`${t("image")}(1920px x 800px)*`}
-                    maxFileSizeInBytes={2000000}
-                    updateFilesCb={updateCarouselBackgroundImage}
-                    preSelectedFiles={carouselBackgroundImage}
-                  />
-                </div>
-                <div>
-                  <LoadingButton
-                    text={t("Add Background Image")}
-                    state={buttonState}
-                    clickEvent={handleCarouselBackground}
-                  />
-                </div>
               </Accordion>
             </>
           )}

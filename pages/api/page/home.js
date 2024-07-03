@@ -28,8 +28,6 @@ export default async function apiHandler(req, res) {
             const { title, subTitle, description, url, image } = body;
             const carouselData = {
               title,
-              subTitle,
-              description,
               url,
               image,
               id: customIdNew({ randomLength: 4, lowerCase: true }),

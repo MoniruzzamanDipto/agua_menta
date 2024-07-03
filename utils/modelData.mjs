@@ -258,7 +258,6 @@ export const user = {
 export const webpage = {
   homePage: {
     carousel: {
-      background: Array,
       carouselData: Array,
     },
     banner: {

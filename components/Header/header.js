@@ -13,21 +13,11 @@ function Header(props) {
   return (
     <div className="col-12 custom-carousel">
       <div className={classes.header}>
-        <div className={classes.bg}>
-          <Image
-            src={props.carousel.background[0]?.url}
-            alt={props.carousel.background[0]?.url}
-            fill={true}
-            quality={100}
-            priority={true}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
-        </div>
         <Carousel
           showArrows={false}
           showThumbs={false}
           showIndicators={true}
-          emulateTouch={true}
+          emulateTouch={false}
           showStatus={false}
           infiniteLoop={true}
           autoPlay={true}
@@ -39,30 +29,25 @@ function Header(props) {
         >
           {props.carousel.carouselData &&
             props.carousel.carouselData.map((item) => (
-              <div className={classes.header_container} key={item.id}>
-                <div className={classes.img_content}>
-                  <div className={classes.img_container}>
-                    <ImageLoader
-                      src={item.image[0]?.url}
-                      width={750}
-                      height={750}
-                      alt={item.title}
-                      style={{
-                        width: "auto",
-                        height: "100%",
-                      }}
-                    />
-                  </div>
+              <Link href={item.url} key={item.id}>
+                <div className={classes.Header_container}>
+                  <Image
+                    src={item.image[0]?.url}
+                    alt={item.title}
+                    fill={false}
+                    quality={100}
+                    priority={true}
+                    width={1920}
+                    height={700}
+                    className={classes.img_content}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      objectFit: "cover",
+                    }}
+                  />
                 </div>
-                <div className={classes.content}>
-                  <div className={classes.body}>
-                    <h2>{item.title}</h2>
-                    <h4>{item.subTitle}</h4>
-                    <p>{item.description}</p>
-                    <Link href={item.url}>{t("shop_now")}</Link>
-                  </div>
-                </div>
-              </div>
+              </Link>
             ))}
         </Carousel>
       </div>
