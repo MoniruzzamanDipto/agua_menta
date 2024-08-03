@@ -6,20 +6,14 @@ import c from "./category.module.css";
 import { useTranslation } from "react-i18next";
 
 const breakpointNewArrival = {
-  320: {
+  600: {
+    slidesPerView: 1,
+  },
+  700: {
     slidesPerView: 2,
   },
-  480: {
-    slidesPerView: 3,
-  },
-  600: {
-    slidesPerView: 4,
-  },
-  991: {
-    slidesPerView: 5,
-  },
   1200: {
-    slidesPerView: 7,
+    slidesPerView: 3,
   },
 };
 
@@ -37,7 +31,7 @@ function CategoryList(props) {
         <div className={c.root_container}>
           <Swiper
             modules={[A11y, Autoplay]}
-            spaceBetween={0}
+            spaceBetween={10}
             slidesPerView="auto"
             breakpoints={breakpointNewArrival}
             className={`_feature_slider ${c.root_container}`}
@@ -58,7 +52,7 @@ function CategoryList(props) {
                   <Category
                     name={category.name}
                     slug={category.slug}
-                    img={category.icon[0]?.url}
+                    img={category.banner[0]?.url}
                   />
                 </SwiperSlide>
               ))}

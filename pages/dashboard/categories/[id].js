@@ -19,12 +19,14 @@ const EditCategory = () => {
   const name = useRef(null);
   const [categoryData, setCategoryData] = useState({});
   const [categoryImage, updateCategoryImage] = useState([]);
+  const [categoryBanner, updateCategoryBanner] = useState([]);
   const [buttonState, setButtonState] = useState("");
   const { t } = useTranslation();
   useEffect(() => {
     if (data && data.category) {
       setCategoryData(data.category);
       updateCategoryImage(data.category.icon);
+      updateCategoryBanner(data.category.banner);
     }
   }, [data]);
 
@@ -39,6 +41,7 @@ const EditCategory = () => {
         id: categoryData._id,
         name: name.current.value,
         categoryImage,
+        categoryBanner,
       };
 
       const response = await postData("/api/categories/edit", formData);
@@ -87,6 +90,15 @@ const EditCategory = () => {
                 maxFileSizeInBytes={2000000}
                 updateFilesCb={updateCategoryImage}
                 preSelectedFiles={categoryData.icon}
+              />
+            </div>
+            <div className="mb-4 pt-2">
+              <FileUpload
+                accept=".jpg,.png,.jpeg"
+                label={`${t("Replace your category image here")}*`}
+                maxFileSizeInBytes={2000000}
+                updateFilesCb={updateCategoryBanner}
+                preSelectedFiles={categoryData.banner}
               />
             </div>
             <div className="mb-4">

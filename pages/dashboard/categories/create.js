@@ -11,6 +11,7 @@ const LoadingButton = dynamic(() => import("~/components/Ui/Button"));
 
 const NewCategory = (props) => {
   const [categoryImage, updateCategoryImage] = useState([]);
+  const [categoryBanner, updateCategoryBanner] = useState([]);
   const [buttonState, setButtonState] = useState("");
   const name = useRef(null);
   const router = useRouter();
@@ -31,6 +32,7 @@ const NewCategory = (props) => {
       const formData = {
         name: name.current.value,
         categoryImage,
+        categoryBanner,
       };
       const response = await postData("/api/categories", formData);
       response.success
@@ -65,6 +67,14 @@ const NewCategory = (props) => {
             label={`${t("Upload your category icon here")}*`}
             maxFileSizeInBytes={2000000}
             updateFilesCb={updateCategoryImage}
+          />
+        </div>
+        <div className="mb-4 pt-2">
+          <FileUpload
+            accept=".jpg,.png,.jpeg"
+            label={`${t("Upload your category image here")}*`}
+            maxFileSizeInBytes={2000000}
+            updateFilesCb={updateCategoryBanner}
           />
         </div>
         <div className="mb-4">

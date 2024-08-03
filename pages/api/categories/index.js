@@ -29,11 +29,13 @@ export default async function apiHandler(req, res) {
       try {
         const data = req.body;
         const image = data.categoryImage;
+        const banner = data.categoryBanner;
         const random = customId({ randomLength: 2, lowerCase: true });
         const categoryData = {
           categoryId: random,
           name: data.name.trim(),
           icon: image,
+          banner,
           slug: convertToSlug(data.name, false),
         };
         await categoryModel.create(categoryData);

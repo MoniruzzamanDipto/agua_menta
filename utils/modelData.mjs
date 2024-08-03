@@ -90,6 +90,7 @@ export const category = {
   categoryId: String,
   name: String,
   icon: Array,
+  banner: Array,
   slug: String,
   subCategories: [
     {

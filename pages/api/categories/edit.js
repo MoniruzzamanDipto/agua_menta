@@ -28,6 +28,7 @@ export default async function apiHandler(req, res) {
         const categoryData = {
           name: data.name.trim(),
           icon: data.categoryImage,
+          banner: data.categoryBanner,
         };
         await categoryModel.findByIdAndUpdate(data.id, categoryData);
         res.status(200).json({ success: true });

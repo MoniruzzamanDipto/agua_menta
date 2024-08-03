@@ -12,8 +12,9 @@ function Category(props) {
               <ImageLoader
                 src={props.img}
                 alt={props.name}
-                width={80}
-                height={80}
+                width={500}
+                height={500}
+                style={{ width: "100%", height: "auto" }}
               />
             </div>
           </figure>
