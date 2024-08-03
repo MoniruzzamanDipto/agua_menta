@@ -2,13 +2,18 @@ import { useTranslation } from "react-i18next";
 import ImageLoader from "../Image";
 import classes from "./checkout.module.css";
 
-const PaymentGatewayList = ({ selectPaymentMethod, submitOrder, settings }) => {
+const PaymentGatewayList = ({
+  selectPaymentMethod,
+  submitOrder,
+  settings,
+  hideCod,
+}) => {
   const { t } = useTranslation();
   return (
     <div>
       <h6>{t("select_a_payment_method")} :</h6>
       <div className={classes.payment_list}>
-        {settings.cod && (
+        {settings.cod && !hideCod && (
           <label className={classes.payment_card_label}>
             <input
               type="radio"

@@ -43,6 +43,7 @@ const Checkout = () => {
   });
   const [paymentMethod, setPaymentMethod] = useState("cod");
   const [showLoginModal, setShowLoginModal] = useState(false);
+  const [hideCod, setHideCod] = useState(false);
   const deliveryLocation = useRef();
   const deliveryArea = useRef();
   const infoForm = useRef();
@@ -54,6 +55,26 @@ const Checkout = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [status]);
+
+  useEffect(() => {
+    const data = cartData.items.map((element) => element.type);
+    if (
+      cartData.items.length > 0 &&
+      !data.includes("product") &&
+      data.includes("ecard")
+    ) {
+      const deliveryData = {
+        type: "Online Delivery",
+        cost: 0,
+        area: null,
+      };
+      setDeliveryInfo(deliveryData);
+      setVisibleTab(2);
+      setHideCod(true);
+    } else if (cartData.items.length > 0 && data.includes("ecard")) {
+      setHideCod(true);
+    }
+  }, [cartData]);
 
   async function fetchShippingCharge() {
     try {
@@ -170,7 +191,7 @@ const Checkout = () => {
   const handleInfoSubmit = async (e) => {
     try {
       e.preventDefault();
-      if (!deliveryInfo.cost && !deliveryInfo.area) {
+      if (deliveryInfo.type?.length === 0 && !deliveryInfo.area) {
         return toast.warning("Please Update The Delivery Information");
       }
       if (!preInfo.billingInfo?.fullName && !preInfo.shippingInfo?.fullName) {
@@ -291,7 +312,7 @@ const Checkout = () => {
       if (cartData.items.length === 0) {
         return toast.warning("Your Cart Is Empty");
       }
-      if (!deliveryInfo.cost && !deliveryInfo.area) {
+      if (deliveryInfo.type?.length === 0 && !deliveryInfo.area) {
         return toast.warning("Please Update The Delivery Information");
       }
       if (!preInfo.billingInfo?.fullName && !preInfo.shippingInfo?.fullName) {
@@ -347,6 +368,7 @@ const Checkout = () => {
                       selectPaymentMethod={selectPaymentMethod}
                       submitOrder={submitOrder}
                       settings={settings.settingsData.paymentGateway}
+                      hideCod={hideCod}
                     />
                   </div>
                 </div>
@@ -417,32 +439,59 @@ const Checkout = () => {
             <tbody>
               {cartData.items.map((item, index) => (
                 <tr className={classes.cart_item} key={index}>
-                  <td>
-                    <div className={classes.cart_container}>
-                      <span className={classes.cart_image}>
-                        <ImageLoader
-                          src={item.image[0]?.url}
-                          height={50}
-                          width={50}
-                          alt={item.name}
-                        />
-                      </span>
-                      <span className={classes.cart_disc}>
-                        <b>{item.name}</b>
-                        {item.color.name && (
-                          <span>Color: {item.color.name}</span>
-                        )}
-                        {item.attribute.name && (
-                          <span>{`${item.attribute.for}: ${item.attribute.name}`}</span>
-                        )}
-                        <span>Qty: {item.qty}</span>
-                      </span>
-                    </div>
-                  </td>
-                  <td>
-                    {currencySymbol}
-                    {decimalBalance(item.price)}
-                  </td>
+                  {item.type === "ecard" ? (
+                    <>
+                      <td>
+                        <div className={classes.cart_container}>
+                          <span className={classes.cart_image}>
+                            <ImageLoader
+                              src={item.image}
+                              height={50}
+                              width={50}
+                              alt={item.name}
+                            />
+                          </span>
+                          <span className={classes.cart_disc}>
+                            <b>Electronic Giftcard</b>
+                            <span>Qty: {item.qty}</span>
+                          </span>
+                        </div>
+                      </td>
+                      <td>
+                        {currencySymbol}
+                        {decimalBalance(item.price)}
+                      </td>
+                    </>
+                  ) : (
+                    <>
+                      <td>
+                        <div className={classes.cart_container}>
+                          <span className={classes.cart_image}>
+                            <ImageLoader
+                              src={item.image[0]?.url}
+                              height={50}
+                              width={50}
+                              alt={item.name}
+                            />
+                          </span>
+                          <span className={classes.cart_disc}>
+                            <b>{item.name}</b>
+                            {item.color.name && (
+                              <span>Color: {item.color.name}</span>
+                            )}
+                            {item.attribute.name && (
+                              <span>{`${item.attribute.for}: ${item.attribute.name}`}</span>
+                            )}
+                            <span>Qty: {item.qty}</span>
+                          </span>
+                        </div>
+                      </td>
+                      <td>
+                        {currencySymbol}
+                        {decimalBalance(item.price)}
+                      </td>
+                    </>
+                  )}
                 </tr>
               ))}
             </tbody>

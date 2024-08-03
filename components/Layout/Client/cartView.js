@@ -79,29 +79,61 @@ export default function CartView() {
               <ul>
                 {cartData.items.map((item, index) => (
                   <li key={index} className={c.item}>
-                    <div className={c.image}>
-                      <ImageLoader
-                        src={item.image[0]?.url}
-                        height={90}
-                        width={90}
-                        alt={item.name}
-                      />
-                    </div>
-                    <div className={c.content}>
-                      <p>{item.name} </p>
-                      <b>
-                        {`${
-                          settings.settingsData.currency.symbol + item.price
-                        } (X${item.qty})`}
-                      </b>
-                      {item.color.name && <span>Color: {item.color.name}</span>}
-                      {item.attribute.name && (
-                        <span>{`${item.attribute.for}: ${item.attribute.name}`}</span>
-                      )}
-                    </div>
-                    <button onClick={() => dispatch(removeFromCart(item.uid))}>
-                      <Trash width={20} height={20} />
-                    </button>
+                    {item.type === "ecard" ? (
+                      <>
+                        <div className={c.image}>
+                          <ImageLoader
+                            src={item.image}
+                            height={90}
+                            width={90}
+                            alt="Ecard"
+                          />
+                        </div>
+                        <div className={c.content}>
+                          <p>Electronic Giftcard</p>
+                          <b>
+                            {`${
+                              settings.settingsData.currency.symbol + item.price
+                            } (X${item.qty})`}
+                          </b>
+                        </div>
+                        <button
+                          onClick={() => dispatch(removeFromCart(item.uid))}
+                        >
+                          <Trash width={20} height={20} />
+                        </button>
+                      </>
+                    ) : (
+                      <>
+                        <div className={c.image}>
+                          <ImageLoader
+                            src={item.image[0]?.url}
+                            height={90}
+                            width={90}
+                            alt={item.name}
+                          />
+                        </div>
+                        <div className={c.content}>
+                          <p>{item.name} </p>
+                          <b>
+                            {`${
+                              settings.settingsData.currency.symbol + item.price
+                            } (X${item.qty})`}
+                          </b>
+                          {item.color.name && (
+                            <span>Color: {item.color.name}</span>
+                          )}
+                          {item.attribute.name && (
+                            <span>{`${item.attribute.for}: ${item.attribute.name}`}</span>
+                          )}
+                        </div>
+                        <button
+                          onClick={() => dispatch(removeFromCart(item.uid))}
+                        >
+                          <Trash width={20} height={20} />
+                        </button>
+                      </>
+                    )}
                   </li>
                 ))}
               </ul>

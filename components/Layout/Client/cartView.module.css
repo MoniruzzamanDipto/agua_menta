@@ -8,6 +8,7 @@
   border: 1px solid var(--border_color);
   border-radius: 5px;
   cursor: default;
+  z-index: 100;
 }
 
 .card::before {

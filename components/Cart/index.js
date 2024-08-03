@@ -54,6 +54,9 @@ const CartPage = () => {
   const finalPrice = getTotalPrice + getTotalVat + getTotalTax - discountPrice;
   const checkMaxQty = (uid) => {
     const product = cart.items.find((item) => item.uid === uid);
+    if (product && product.type === "ecard") {
+      return true;
+    }
     if (product && product.quantity === -1) {
       return true;
     }
@@ -125,37 +128,73 @@ const CartPage = () => {
       </div>
       {cart.items.map((item, index) => (
         <div key={index} className={classes.body}>
-          <div className={classes.image} data-name="Image">
-            <ImageLoader
-              src={item.image[0]?.url}
-              height={90}
-              width={90}
-              alt={item.name}
-            />
-          </div>
-          <div data-name="Name">
-            {item.name}
-            {item.color.name && <span>Color: {item.color.name}</span>}
-            {item.attribute.name && (
-              <span>{`${item.attribute.for}: ${item.attribute.name}`}</span>
-            )}
-          </div>
-          <div data-name="Price">
-            {settings.settingsData.currency.symbol}
-            {item.price}
-          </div>
-          <div data-name="Quantity">{item.qty}</div>
-          <div className={classes.buttons} data-name="Actions">
-            <button onClick={() => increaseQty(item.uid)}>+</button>
-            <button onClick={() => decreaseQty(item.uid)}>-</button>
-            <button onClick={() => dispatch(removeFromCart(item.uid))}>
-              x
-            </button>
-          </div>
-          <div data-name="Total Price">
-            {settings.settingsData.currency.symbol}
-            {decimalBalance(item.qty * item.price)}
-          </div>
+          {item.type === "ecard" ? (
+            <>
+              <div className={classes.image} data-name="Image">
+                <ImageLoader
+                  src={item.image}
+                  height={90}
+                  width={90}
+                  alt={item.name}
+                />
+              </div>
+              <div data-name="Name">Electronic Giftcard</div>
+              <div data-name="Price">
+                {settings.settingsData.currency.symbol}
+                {item.price}
+              </div>
+              <div data-name="Quantity">{item.qty}</div>
+              <div className={classes.buttons} data-name="Actions">
+                <button disabled onClick={() => increaseQty(item.uid)}>
+                  +
+                </button>
+                <button disabled onClick={() => decreaseQty(item.uid)}>
+                  -
+                </button>
+                <button onClick={() => dispatch(removeFromCart(item.uid))}>
+                  x
+                </button>
+              </div>
+              <div data-name="Total Price">
+                {settings.settingsData.currency.symbol}
+                {decimalBalance(item.qty * item.price)}
+              </div>
+            </>
+          ) : (
+            <>
+              <div className={classes.image} data-name="Image">
+                <ImageLoader
+                  src={item.image[0]?.url}
+                  height={90}
+                  width={90}
+                  alt={item.name}
+                />
+              </div>
+              <div data-name="Name">
+                {item.name}
+                {item.color.name && <span>Color: {item.color.name}</span>}
+                {item.attribute.name && (
+                  <span>{`${item.attribute.for}: ${item.attribute.name}`}</span>
+                )}
+              </div>
+              <div data-name="Price">
+                {settings.settingsData.currency.symbol}
+                {item.price}
+              </div>
+              <div data-name="Quantity">{item.qty}</div>
+              <div className={classes.buttons} data-name="Actions">
+                <button onClick={() => increaseQty(item.uid)}>+</button>
+                <button onClick={() => decreaseQty(item.uid)}>-</button>
+                <button onClick={() => dispatch(removeFromCart(item.uid))}>
+                  x
+                </button>
+              </div>
+              <div data-name="Total Price">
+                {settings.settingsData.currency.symbol}
+                {decimalBalance(item.qty * item.price)}
+              </div>
+            </>
+          )}
         </div>
       ))}
       <div className={classes.card_container}>

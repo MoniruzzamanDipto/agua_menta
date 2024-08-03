@@ -248,6 +248,7 @@ export const user = {
   resetPasswordToken: String,
   resetPasswordExpires: Date,
   orders: [{ type: mongoose.Schema.Types.ObjectId, ref: "order" }],
+  giftCards: [{ type: mongoose.Schema.Types.ObjectId, ref: "giftCard" }],
   favorite: [{ type: mongoose.Schema.Types.ObjectId, ref: "product" }],
   refundRequest: [
     { type: mongoose.Schema.Types.ObjectId, ref: "refundRequest" },
@@ -345,4 +346,47 @@ export const address = {
   user: { type: mongoose.Schema.Types.ObjectId, ref: "user" },
   addressType: String,
   addressTitle: String,
+};
+
+export const giftCard = {
+  name: {
+    type: String,
+    required: true,
+  },
+  recipient: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+    match: [/.+\@.+\..+/, "Please enter a valid email address"],
+  },
+  message: {
+    type: String,
+    required: true,
+  },
+  image: {
+    type: String,
+    required: true,
+  },
+  amount: {
+    type: Number,
+    required: true,
+    min: [0, "Amount must be a positive number"],
+  },
+  type: {
+    type: String,
+    enum: ["ecard", "physical"],
+    required: true,
+  },
+  code: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  expiryDate: {
+    type: Date,
+    required: true,
+  },
 };

@@ -156,6 +156,12 @@ const cartSlice = createSlice({
       state.compare = action.payload;
       setStorageData(CART, state);
     },
+    addEcardToCart: (state, action) => {
+      state.items.push({ ...action.payload });
+      console.log("egg", state.items);
+
+      setStorageData(CART, state);
+    },
   },
 });
 
@@ -173,4 +179,5 @@ export const {
   updateBillingData,
   updateWishlist,
   updateComparelist,
+  addEcardToCart,
 } = cartSlice.actions;

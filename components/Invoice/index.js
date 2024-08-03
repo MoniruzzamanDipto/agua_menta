@@ -55,9 +55,11 @@ const Invoice = ({ data }) => {
             <div className={classes.cart_item} key={index}>
               <div className={classes.cart_container}>
                 <span className={classes.cart_disc}>
-                  <b>{item.name}</b>
-                  {item.color.name && <span>Color: {item.color.name}</span>}
-                  {item.attribute.name && (
+                  <b>
+                    {item.type === "ecard" ? "Electronic Giftcard" : item.name}
+                  </b>
+                  {item.color?.name && <span>Color: {item.color.name}</span>}
+                  {item.attribute?.name && (
                     <span>{`${item.attribute.for}: ${item.attribute.name}`}</span>
                   )}
                   <span>Qty: {item.qty}</span>

@@ -74,18 +74,26 @@ const InvoicePrint = ({ data }) => {
                     <div className="cart_container">
                       <span className="cart_image">
                         <ImageLoader
-                          src={item.image[0]?.url}
+                          src={
+                            item.type === "ecard"
+                              ? item.image
+                              : item.image[0]?.url
+                          }
                           height={50}
                           width={50}
                           alt={item.name}
                         />
                       </span>
                       <span className="cart_disc">
-                        <b>{item.name}</b>
-                        {item.color.name && (
+                        <b>
+                          {item.type === "ecard"
+                            ? "Electronic Giftcard"
+                            : item.name}
+                        </b>
+                        {item.color?.name && (
                           <span>Color: {item.color.name}</span>
                         )}
-                        {item.attribute.name && (
+                        {item.attribute?.name && (
                           <span>{`${item.attribute.for}: ${item.attribute.name}`}</span>
                         )}
                         <span>Qty: {item.qty}</span>

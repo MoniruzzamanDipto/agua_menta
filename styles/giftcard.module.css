@@ -1,0 +1,92 @@
+.preview {
+  border: 1px solid var(--border_color);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.input {
+  margin: 10px;
+}
+
+.input p {
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+.images,
+.amount {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.images li,
+.amount li {
+  padding: 2px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.images li[data-active="true"] {
+  border-color: var(--primary);
+}
+
+.amount li {
+  border: 1px solid var(--border_color);
+  margin: 5px;
+  height: 27px;
+  width: 47px;
+  text-align: center;
+}
+
+.amount li[data-active="true"] {
+  border-color: var(--primary);
+}
+
+/* Giftcard Design */
+.giftcard_root {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(80px);
+  background-color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.giftcard {
+  width: 350px;
+  background-color: #fff;
+  border: 1px solid var(--border_color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.giftcard h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.giftcard p {
+  margin-bottom: 10px;
+}
+
+.giftcard img {
+  margin: 10px auto 20px;
+}
+
+.giftcard .list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #333;
+  padding: 6px 0;
+}

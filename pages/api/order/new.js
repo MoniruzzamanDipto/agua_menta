@@ -5,8 +5,11 @@ import notificationModel from "~/models/notification";
 import orderModel from "~/models/order";
 import productModel from "~/models/product";
 import userModel from "~/models/user";
+import giftcardModel from "~/models/giftCard";
 import dbConnect from "~/utils/dbConnect";
 import { parseForm } from "~/utils/parseForm";
+import crypto from "crypto";
+import { sendGiftCardMail } from "~/lib/email/giftcard";
 
 export const config = {
   api: {
@@ -14,36 +17,48 @@ export const config = {
   },
 };
 
+function generateUniqueId() {
+  const buffer = crypto.randomBytes(16);
+  const hex = buffer.toString("hex");
+  const formattedHex = `${hex.slice(0, 5)}-${hex.slice(5, 10)}-${hex.slice(
+    10,
+    15
+  )}-${hex.slice(15, 20)}`;
+  return formattedHex;
+}
+
 export default async function apiHandler(req, res) {
   const { method } = req;
   const secret = process.env.AUTH_SECRET;
   const session = await getToken({ req, secret });
-
+  let giftCards = [];
   await dbConnect();
 
   const decrementQty = async (products) => {
     eachSeries(
       products,
       async (item, done) => {
-        if (item.color.name || item.attribute.name) {
-          const product = await productModel.findById(item._id);
-          if (product) {
-            const colorName = item.color.name;
-            const attrName = item.attribute.name;
-            const variant = product.variants.find(
-              (item) => item.color === colorName && item.attr === attrName
-            );
-            if (variant.qty != -1) {
-              variant.qty = variant.qty - item.qty;
-              product.markModified("variants");
+        if (item.type === "product") {
+          if (item.color.name || item.attribute.name) {
+            const product = await productModel.findById(item._id);
+            if (product) {
+              const colorName = item.color.name;
+              const attrName = item.attribute.name;
+              const variant = product.variants.find(
+                (item) => item.color === colorName && item.attr === attrName
+              );
+              if (variant.qty != -1) {
+                variant.qty = variant.qty - item.qty;
+                product.markModified("variants");
+                await product.save(done);
+              }
+            }
+          } else {
+            const product = await productModel.findById(item._id);
+            if (product && product.quantity != -1) {
+              product.quantity = product.quantity - item.qty;
               await product.save(done);
             }
-          }
-        } else {
-          const product = await productModel.findById(item._id);
-          if (product && product.quantity != -1) {
-            product.quantity = product.quantity - item.qty;
-            await product.save(done);
           }
         }
       },
@@ -53,6 +68,26 @@ export default async function apiHandler(req, res) {
         }
       }
     );
+  };
+
+  const generateGiftCard = async (items) => {
+    try {
+      const currentDate = new Date();
+      currentDate.setFullYear(currentDate.getFullYear() + 3);
+      for (const el of items) {
+        if (el.type === "ecard") {
+          const data = {
+            ...el,
+            code: generateUniqueId(),
+            expiryDate: currentDate,
+          };
+          const giftCard = await giftcardModel.create(data);
+          giftCards.push(giftCard);
+        }
+      }
+    } catch (err) {
+      throw new Error(err.message);
+    }
   };
 
   function checkPercentage(number, percentage) {
@@ -105,6 +140,7 @@ export default async function apiHandler(req, res) {
           paymentData,
         } = jsonData;
         await decrementQty(products);
+        await generateGiftCard(products);
         const price = await getTotalPrice(products);
         const vat = await getTotalVat(products);
         const tax = await getTotalTax(products);
@@ -133,13 +169,23 @@ export default async function apiHandler(req, res) {
           tax,
         };
         const createdOrder = await orderModel.create(orderData);
+
         if (session && session.user.id) {
-          await userModel.findByIdAndUpdate(session.user.id, {
-            $push: { orders: createdOrder._id },
-          });
+          const user = await userModel.findById(session.user.id);
+          user.orders.push(createdOrder._id);
+          if (giftCards.length > 0) {
+            user.giftCards.push(...giftCards.map((gc) => gc._id));
+          }
+          await user.save();
         }
         const message = `<p>A new order (<a href="/dashboard/orders/${createdOrder._id}" target="_blank">${createdOrder.orderId}</a>) has been placed</p>`;
         await notificationModel.create({ message });
+        // send notification if giftcard
+        if (giftCards.length > 0) {
+          for (const el of giftCards) {
+            await sendGiftCardMail(el);
+          }
+        }
         res.status(200).json({ success: true, createdOrder });
       } catch (err) {
         console.log(err);

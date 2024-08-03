@@ -74,7 +74,7 @@ const Footer = (props) => {
       },
       {
         name: t("Gift card"),
-        link: "/gift-card",
+        link: "/giftcard",
       },
     ],
     AboutUs: [
